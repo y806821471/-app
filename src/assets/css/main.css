@@ -1,0 +1,132 @@
+/* 阿里巴巴矢量图 */
+@import "iconfont.css";
+@font-face {
+    font-family: 'icon';
+    src: url('iconfont.ttf') format('truetype');   
+}
+.icon {
+    position: relative;
+    font-family:"icon" !important;
+    font-size:26px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+}
+
+/* reset museUi 主灰:#F4F2ED 浅灰:#A6A1A7 #7A7A7A  边线:#F3F3F3*/
+*, :after, :before {box-sizing: border-box;}
+body{ background-color: #F9F9F9; font-size: 12px; font-family:"PingFang-SC-Medium", "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", 微软雅黑, STHeiti, "WenQuanYi Micro Hei", SimSun, "DIN-Medium","DIN",sans-serif; color: #30362A;}
+a{color: #EAF3F3;}
+ul,li{ padding: 0; margin: 0; list-style: none;}
+p{ margin: 0;}
+.fl{float: left;}
+.fr{float: right;}
+/* navbar */
+.van-nav-bar{ background-color: transparent; padding-top: 20px; height: 66px; line-height: 46px; position: fixed; width: 100%; left: 0; top: 0; align-items: center; display: flex;z-index: 2;}
+.van-nav-bar .van-nav-bar__right{ height: 46px;}
+.van-nav-bar .icon{ font-size: 20px; color: #969993;}
+.van-hairline--bottom::after{ border: 0;}
+.van-nav-bar__title{ color: #30362A;}
+.van-nav-bar .van-icon{ color: #969993;}
+.van-nav-bar__left .van-icon{ color: #969993;}
+.van-nav-bar__right .van-icon{ color: #969993; font-size: 20px;}
+@media only screen and (min-width: 375px) and (min-height: 812px){
+    .van-nav-bar{padding-top: 30px;}
+    .van-nav-bar__left{ top: 25px;}
+    .van-nav-bar__right{ height: 40px;}
+    .van-tabbar{ height: 62px;}
+}
+/* bottom bar */
+.van-tabbar{ background-color:#fff; box-shadow:0px 2px 8px 0px rgba(216,216,216,0.5);min-height: 60px;}
+.van-tabbar-item{ justify-content: flex-start;}
+.van-tabbar-item__text{ display: flex; flex-direction: column; align-items: center; padding-top: 6px;}
+.van-tabbar-item__text img{ width: 21px;}
+
+/* 登陆注册忘记密码公共样式 */
+.logo{text-align: center; margin: 20px 0;}
+.logo img{ margin-top: 10px; width: 54px;}
+.login .van-cell-group{ padding: 10px 35px 66px 35px;  margin-bottom: 55px;}
+.login .title{ font-size: 26px;}
+.login .van-cell{ padding: 10px 0;}
+.login .common-btn{ margin-top: 20px; font-size: 16px;}
+.login .bottom {  font-size: 14px; position: fixed;left:0;bottom: 0; background-color: #fff; width: 100%; line-height: 30px;padding-left: 35px;padding-bottom: 30px;}
+.login .bottom a{ color: #D94600;}
+.login .van-field__control{ color: #30362A;} 
+.login ::-webkit-input-placeholder { color: #D7D9D4; font-size: 14px;}
+.login .van-cell {margin-bottom: 20px;}
+/* 提现 */
+.withdraw .van-field__control {color: #30362a;font-weight:bold;font-size:26px;}
+.withdraw ::-webkit-input-placeholder { color: #D7D9D4; font-size: 14px;font-weight:400; }
+
+ .van-field__control:disabled{color: #30362A;-webkit-text-fill-color: #30362A;}
+/* 表单公共样式 */
+.field-label{ font-size: 14px; margin-top: 15px;}
+.van-hairline--top-bottom::after, .van-hairline-unset--top-bottom::after{ border: 0;}
+.van-field__control{ color: #30362A;}
+.van-cell::after { position: absolute; box-sizing: border-box; content: ' '; pointer-events: none; right: 0; bottom: 0; left:0!important; right: 0; border-bottom: 1px solid #EDEDED; -webkit-transform: scaleY(.5); transform: scaleY(.5);}
+.van-field__right-icon .van-icon{ font-size: 20px; color: #D8D8D8;}
+.common-btn{ width: 100%; background:rgba(217,70,0,1); border: 0; border-radius: 30px; height: 40px; line-height: 40px; color: #fff;}
+
+
+/* 弹出框 */ 
+.van-dialog .van-dialog__confirm{color:#D94600}
+.van-dialog .van-dialog__message{padding: 24px 68px;}
+.van-dialog{border-radius: 8px;}
+
+/* 底部弹出密码输入框 */
+.van-number-keyboard{ position: relative; margin-top: 40px;}
+
+/* 渐变颜色字 */
+.color999{ background-image:-webkit-linear-gradient(270deg,rgba(246,231,201,1) 0%,rgba(208,161,104,1) 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent;}
+/* 宫格 */
+.van-grid-item__content{background-color: transparent;}
+
+/* tab切换 */
+.Home .van-tabs__nav{background:transparent;}
+.Home .van-tabs__wrap {width: 62%;padding-left: 12px;}
+.Home .van-tab{padding: 0; margin: 0;font-size: 16px;}
+.Home .van-tabs .van-tab--active{ color: #30362A!important; font-size: 18px;  font-weight:bold;}
+.Home .van-tabs .van-tab{ color: #969993;  font-weight:bold;}
+.Home .van-tabs .van-tabs__line{height: 0;}
+.Home .van-tab__pane{background-color: #fff;margin-bottom: 65px;}
+
+.MyFans .van-nav-bar {background-color: #f9f9f9;}
+.MyFans .van-tabs--line .van-tabs__wrap {height: 44px;position: fixed;top:136px;width: 100%;}
+.MyFans .van-tabs {margin-top:70px;}
+.MyFans .van-sticky{border-bottom: 1px solid #EEEEEE;}
+.MyFans .van-tabs__content{background-color: #fff; }
+
+.AddFood .van-tabs__nav{display: flex;flex-wrap: wrap;justify-content:space-between;width: 100%;}
+.AddFood .title{display: flex; align-items: center;}
+.AddFood .van-tabs--line .van-tabs__wrap{height: 100%; padding-left:17px }
+.AddFood .van-tab { flex: 1;width: 33.33%;min-width: 33.3%;max-width: 33.3%; padding: 0;}
+.AddFood .van-tabs__content{background-color: #fff;padding:0 17px;}
+
+/* 提交记录 */
+.qusetionList .van-collapse-item__title{border-radius:8px 8px 0px 0px;align-items: center;}
+.qusetionList .van-collapse-item__content{ background: #eee;border-radius: 0px 0px 8px 8px;}
+
+.van-progress__pivot{font-size: 0;}
+
+/* 步进器 */
+.van-stepper{ border: 1px solid #E2E2E2;background-color: #fff;padding: 5px 7px;border-radius:4px 0px 0px 4px;}
+.van-stepper__input{background-color:transparent; color: #30362A;font-size: 16px;margin-right: 15px;}
+.van-stepper__input[disabled]{background-color:transparent;color: #30362A;}
+.van-stepper__minus, .van-stepper__plus{background-color:transparent;color: #969993;}
+.van-stepper__minus--disabled:active, .van-stepper__plus--disabled:active{background-color:transparent;}
+.van-stepper__minus--disabled, .van-stepper__plus--disabled{color: #D8D8D8;}
+
+/* 日期选择 */
+
+.TestingRecord .van-field__control {color: #fff; text-align: center;}
+.TestingRecord ::-webkit-input-placeholder { color: #fff;  }
+.TestingRecord  .van-cell[data-v-6738fdd6]{width: 70px;}   
+/* //110 */
+
+.qusetionList .van-collapse-item{margin-bottom: 10px;}
+
+
+.van-picker__confirm{color: #30362A;}
+.van-picker__cancel{color: #969993;}
+/* 搜索框输入文字颜色 */
+.Home .search .van-field__control {color: #fff;}  
