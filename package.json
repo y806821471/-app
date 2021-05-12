@@ -12,7 +12,7 @@
     "axios": "^0.19.0",
     "core-js": "^3.3.2",
     "jsencrypt": "^3.0.0-rc.1",
-    "swiper": "^5.2.0",
+    "swiper": "^6.5.1",
     "vant": "^2.0.5",
     "vue": "^2.6.10",
     "vue-calendar-component": "^2.8.2",
